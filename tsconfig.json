@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2021",
+    "typeRoots": ["node_modules/@types"],
+    "outDir": ".",
+    "declaration": true,
+    "removeComments": true,
+    "sourceMap": false,
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "include": ["src/lib", "src/base", "src/index.ts"],
+  "exclude": ["node_modules", "src/**/*.test.ts", "src/**/files/**"]
+}

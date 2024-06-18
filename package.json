@@ -1,0 +1,35 @@
+{
+  "name": "@duyanhit/nestjs-base",
+  "version": "1.0.0",
+  "description": "Nestjs base",
+  "main": "index.js",
+  "files": [
+    "base/**/*",
+    "index.js",
+    "index.d.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prebuild": "rm -rf base && rm -rf lib && rm -f index.d.ts && rm -f index.js",
+    "build": "tsc --project tsconfig.json"
+  },
+  "author": "Duy Anh",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^10.0.9",
+    "@nestjs/swagger": "^7.3.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "lodash": "^4.17.21",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.5",
+    "@types/pluralize": "^0.0.33",
+    "cpx2": "^7.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
